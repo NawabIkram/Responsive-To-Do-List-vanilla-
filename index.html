@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster - Responsive To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TaskMaster</h1>
+            <p class="subtitle">A simple, responsive to-do list</p>
+        </header>
+        
+        <div class="input-container">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <button id="add-btn" class="add-btn">Add Task</button>
+        </div>
+        
+        <div class="tasks-container">
+            <div class="tasks-header">
+                <h2>Your Tasks</h2>
+                <span class="tasks-count" id="tasks-count">0 tasks</span>
+            </div>
+            
+            <ul class="tasks-list" id="tasks-list">
+                <!-- Tasks will be added here dynamically -->
+            </ul>
+            
+            <div class="empty-state" id="empty-state">
+                <div class="empty-icon">📝</div>
+                <h3>No tasks yet</h3>
+                <p>Add your first task using the input above!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
